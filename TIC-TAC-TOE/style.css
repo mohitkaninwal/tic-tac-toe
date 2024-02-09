@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #2b2830, #213b53);
+}
+
+html {
+    font-size: 16px;
+}
+
+.wrapper {
+    position: absolute;
+    transform: translate(-50%l, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+    margin: 0 auto;
+}
+
+.button-option {
+    background: white;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 5px;
+    font-size: 12vmin;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+
+#restart {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #0a0027;
+    color: white;
+    position: relative;
+    margin: 2em auto 0 auto;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.popup {
+    background: linear-gradient(135deg, #2b2830, #213b53);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+}
+
+#new-game {
+    font-size: 0.3em;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    border: none;
+}
+
+#message {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.popup.hide {
+    display: none;
+}
